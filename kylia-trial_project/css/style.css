@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --bg-light: #fff;
+  --btn-primary: #fbd805;
+}
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+.alert{
+  margin: 0;
+  color: red;
+  font-size: 14px;
+  margin-top: -2px;
+  display: none;
+  padding: 0;
+  margin-right: 0;
+}
+
+.burger {
+  margin: auto 10px;
+  display: none;
+}
+.chkbox,
+.fa-xmark {
+  display: none;
+}
+.burger i {
+  font-size: 25px;
+}
+
+.nav-colored {
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.nav-transparent {
+  background-color: rgba(0, 0, 0, 0.911);
+  transition: all 0.3s ease;
+}
+/* .pages {
+  display: none;
+} */
+.dform {
+  display: none;
+}
+
+.button {
+  width: 257px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  border-radius: 6px;
+  padding: 0;
+  background-color: var(--btn-primary);
+  border: none;
+  color: black;
+}
+.button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: #e7c506;
+}
+a {
+  text-decoration: none;
+}
+ .form-section .h2con{
+  display: flex;
+  justify-content: center;
+    width: 100%;
+    text-align: center ;
+ }
+
+
+/* START HOME SECTION */
+.home-section{
+ 
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  padding-top: 90px;
+  /* padding: 0 25px; */
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../img/herobg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  padding: 0% 25px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(242, 236, 236);
+  overflow: visible;
+  top: 0;
+  z-index: 999999999;
+}
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding: 5% 0;
+}
+.div-hero-info {
+  width: 100%;
+  height: auto;
+}
+nav .logo {
+  width: 180px;
+  height: auto;
+  margin-top: 5px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+ul li {
+  margin-right: 25px;
+  list-style: none;
+}
+ul li a {
+  font-size: 14px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
+  text-decoration: none;
+}
+ul li a:hover{
+  cursor: pointer;
+  color: gainsboro;
+}
+
+.hero-container {
+  width: 100%;
+  height: auto;
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+.dorpdown {
+  font-size: 16px;
+  line-height: 49px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: center;
+}
+.dorpdown {
+  display: flex;
+  line-height: 25px;
+  justify-content: center;
+  margin: 30px 0;
+}
+label{
+  font-weight: 400;
+}
+.input-borrow {
+  padding: 5px;
+}
+.dorpdown div {
+  width: 300px;
+  text-align: left;
+  margin: 10px 20px;
+}
+.dorpdown div .form-select,
+.input-borrow {
+  width: 100%;
+  font-weight: 16px;
+}
+.btn-next {
+  margin: 30px 0;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-container div {
+  margin: 0 5%;
+}
+.icon-container img {
+  width: 30px;
+}
+.icon-container p {
+  font-size: 16px;
+  font-weight: 400;
+}
+/* END HOME SECTION */
+
+/* START OF HOME LOAN */
+.loan-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0 25px;
+  text-align: center;
+}
+.loan-header {
+  padding: 5% 0;
+}
+.benefits-header {
+  position: relative;
+  text-align: center;
+  padding-top: 120px;
+}
+.benefits-header .dragonbg {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+}
+.bank-container {
+  width: 100%;
+  justify-content: center;
+  padding: 25px;
+}
+.accounts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 10px auto;
+  justify-content: center;
+}
+.list-left div,
+.list-rigth div {
+  margin: 8px 0;
+}
+.list-rigth div p,
+.list-left div p {
+  margin-bottom: 0;
+}
+
+.accounts div {
+  flex: 18%;
+  margin: 20px 50px;
+  min-width: 100px;
+  max-width: 120px;
+  text-align: center;
+}
+
+.bank-container .and_more a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  border-bottom: 1px solid black;
+}
+.benefits {
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+}
+.list-benefits {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  line-height: 0.8;
+}
+.list-left,
+.list-rigth {
+  text-align: left;
+  line-height: 1.2;
+}
+.list-left div,
+.list-rigth div {
+  display: flex;
+  align-items: center !important;
+}
+.list-left span::before,
+.list-rigth span::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 26px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: var(--btn-primary);
+  z-index: -1;
+}
+.list-left span,
+.list-rigth span {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 26px;
+  padding: 12px;
+  text-align: center;
+}
+/* .list-left span img,
+.list-rigth span img {
+  width: 100%;
+} */
+/* .list-left div,
+.list-rigth div {
+  line-height: 1;
+} */
+
+/* START HOW IT WORKS */
+.how-it-works-section {
+  width: 100%;
+  height: auto;
+  background-color: var(--btn-primary);
+  text-align: center;
+}
+.how-it-works {
+  padding-top: 50px;
+}
+.div-con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  width: 100%;
+}
+.div-box {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  margin: 10px;
+  margin-top: 50px;
+  justify-content: center;
+}
+.top_icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -40px;
+  left: 34%;
+  padding-top: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+.top_icon h3 {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+.top_icon img {
+  margin-top: 10px;
+}
+.textcon h3 {
+  font-size: 16px;
+  width: 100%;
+  color: var(--btn-primary);
+}
+.textcon p {
+  font-size: 14px;
+  padding: 0 20px;
+  color: #fff;
+}
+.textcon {
+  margin-top: 70px;
+  width: 100%;
+}
+
+.divfinanceTxt {
+  padding: 40px;
+}
+
+.ready-to-get-loan-section {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  padding: 25px;
+  text-align: center;
+}
+.loan-title {
+  color: #fff;
+  padding: 20px 0;
+}
+
+.borrow-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center !important;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
+  padding-top: 20px;
+}
+.borrow-container p {
+  margin: 0;
+}
+.borrow-container input {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.loan-next-btn {
+  width: 200px;
+}
+
+/* START FOOTER */
+
+footer {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
+
+/* FOR IPOD */
+@media only screen and (max-width: 850px) {
+  .div-hero-info h2 {
+    margin: 20px 0;
+  }
+  .burger {
+    display: block;
+    color: #fff;
+  }
+  .fa-xmark {
+    color: #fff;
+    position: absolute;
+    font-size: 25px;
+    top: 20px;
+    right: 20px;
+    display: block;
+  }
+  ul li {
+    margin: 0;
+  }
+  #burgercheck {
+    transition: all 0.5s ease;
+  }
+  #menus {
+    position: absolute;
+    display: block;
+    text-align: center;
+    right: -300px;
+    padding: 80px 5px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    z-index: 9999999;
+    transition: all 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.811);
+  }
+  #burgercheck:checked ~ #menus {
+    position: absolute;
+
+    right: 0;
+    transition: all 0.5s ease;
+  }
+  .accounts {
+    margin: 0;
+    width: 100%;
+  }
+  .benefits {
+    margin: 0;
+    width: 100%;
+  }
+  .list-benefits {
+    padding: 0;
+  }
+  .list-left,
+  .list-rigth {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .borrow-container button {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dorpdown {
+    position: relative;
+    display: block;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .dorpdown div {
+    width: auto;
+  }
+  .bank-container {
+    padding: 0;
+  }
+  .accounts {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .accounts div {
+    flex: 100%;
+    margin: 20px;
+    width: 100%;
+  }
+  .loan-header {
+    padding: 40px 0;
+  }
+  .list-benefits {
+    display: block;
+  }
+  .bank-container {
+    padding-bottom: 30px;
+  }
+  .list-left,
+  .list-rigth {
+    padding: 0 !important;
+  }
+}

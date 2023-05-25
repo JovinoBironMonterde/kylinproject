@@ -1,0 +1,415 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Kylin</title>
+  </head>
+  <body>
+    <!-- HOME SECTION -->
+    <!-- PAGES -->
+    <div class="pages" id="mypage">
+      <nav id="mynavbar" class="nav-transparent">
+        <div class="logo">
+          <a href="#home">
+          <img src="./img/logo2.png" alt="" width="100%" />
+        </div>
+        </a>
+
+        <input type="checkbox" id="burgercheck" class="chkbox" />
+        <label for="burgercheck" class="burger">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul id="menus">
+          <i class="fa-solid fa-xmark" onclick="closed()"></i>
+          <li><a href="#home" onclick="closed()">HOME</a></li>
+          <li><a href="#features" onclick="closed()">FEATURES</a></li>
+          <li><a href="#works" onclick="closed()">HOW IT WORKS</a></li>
+          <li>
+            <button class="button" onclick="getData()">GET STARTED</button>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="home-section" id="home">
+        <div class="hero-container">
+          <div class="div-hero-info">
+            <h2>
+              We'll find the lowest home <br />
+              loan rate for you!
+            </h2>
+            <form action="form1.html">
+              <div class="dorpdown">
+                <div>
+                  <label for="amount">I'd like to borrow</label><br />
+                  <input
+                    type="number"
+                    id="id1"
+                    class="input-borrow"
+                    placeholder="$200,000"
+                    onkeypress="ckdg()";
+                  />
+                     <div class="alert" id="div-alert">
+              This required field must be at least $100,000
+            </div>
+                </div>
+
+                <div>
+                  <label for="">I'm looking to</label><br />
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="id2"
+                  >
+                    <option selected>Please Select</option>
+                    <option value="1">Refinance my existing home loan</option>
+                    <option value="2">Refinance</option>
+                    <option value="3">Purchase my next home</option>
+                    <option value="4">Purchase my first home</option>
+                    <option value="5">Purchase an investment</option>
+                    <option value="6">other</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="">My timeframe is</label><br />
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id=""
+                  >
+                   <option selected>Please Select</option>
+                    <option value="1">Refinance my existing home loan</option>
+                    <option value="2">Now</option>
+                    <option value="3">Next 3 months</option>
+                    <option value="4">Next 3-6 months</option>
+                    <option value="5">Next 6-12 months</option>
+                  </select>
+                </div>
+              </div>
+              <div class="btn-next">
+                <button class="button" onclick="getData()">NEXT</button>
+              </div>
+            </form>
+            <div class="icon-container">
+              <div>
+                <img src="./img/hero-icon1.png" alt="" />
+                <p>Compare multiple lenders</p>
+              </div>
+              <div>
+                <img src="./img/hero-icon2.png" alt="" />
+                <p>Purchase and Refinance</p>
+              </div>
+              <div>
+                <img src="./img/hero-icon3.png" alt="" />
+                <p>Employed and Self Employed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END HOME SECTION -->
+      <!-- START OF HOME LOANS -->
+      <section class="loan-section">
+        <div class="loan-header">
+          <h1>Compare Thousands of home loans</h1>
+          <p>Find out if you can save money by comparing home loans from mul</p>
+        </div>
+
+        <div class="bank-container">
+          <div class="accounts">
+            <div>
+              <img src="./img/bank-icon/commonwealth.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/george.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/westpack.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/nab.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/amp.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/anz.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/bluestone.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/liberty.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/pepper.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/resimac.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/boq.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img
+                src="./img/bank-icon/bankof_melboune.png"
+                width="100%"
+                alt=""
+              />
+            </div>
+            <div>
+              <img src="./img/bank-icon/firstmac.png" width="100%" alt="" />
+            </div>
+            <div>
+              <img src="./img/bank-icon/finance.png" width="100%" alt="" />
+            </div>
+          </div>
+          <div class="and_more">
+            <a href="#">and more..</a>
+          </div>
+          <div class="benefits" id="features">
+            <div class="benefits-header">
+              <h1>Exclusive Features & Benefits</h1>
+              <br />
+              <p>
+                Finding a home loan is hard, especially choose from. We have
+                exclusive deals with most of the banks and lenders to offer you
+                the lowest rates possible. We'll take the stress out of home
+                loans by taking care of the paperwork, negotiate with lenders
+                and get you approved fast. Best of all, our service is
+                completely free!
+              </p>
+              <!-- <div class="dragonbg">
+                <img src="./img/icon/dragonbg.png" alt="" width="100%" />
+              </div> -->
+              <div class="list-benefits">
+                <div class="list-left">
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon1.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+
+                    <p>Unlimited cash out</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon2.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>Borrow up to 95% of the property value</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon3.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>Loan term up to 30 years</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon4.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>
+                      Flexible payment options – weekly, fortnightly, monthly
+                    </p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon5.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>Principal & Interest or Interest Only</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon6.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>Best interest rates in the market</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon7.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>Purchase or Refinance</p>
+                  </div>
+                </div>
+                <div class="list-rigth">
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon8.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>Home, investment property, business, commercial,</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img src="./img/icon/icons/icon9.png" alt="" width="80%"
+                    /></span>
+                    <p>construction, vehicle loan</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon10.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>Investment or Owner Occupied</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon11.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>Self-employed Specialists $0 risk fee (Low Doc)</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon12.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>100% offset account</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon13.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>Split loans</p>
+                  </div>
+                  <div>
+                    <span
+                      ><img
+                        src="./img/icon/icons/icon13.png"
+                        alt=""
+                        width="100%"
+                    /></span>
+                    <p>Free redraws & extra repayments</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END OF HOME LOANS -->
+      <!-- START OF HOW IT WORKS -->
+      <section class="how-it-works-section" id="works">
+        <div class="how-it-works">
+          <h1>How It Works</h1>
+        </div>
+        <br />
+        <div class="div-con">
+          <div class="div-box">
+            <div class="top_icon">
+              <h3>STEP 1</h3>
+              <img src="./img/icon/div-icon1.png" width="30%" alt="" />
+            </div>
+            <div class="textcon">
+              <h3>How much do you want to borrow?</h3>
+              <p>
+                Let us know how much you want to borrow and we'll check if you
+                qualify
+              </p>
+            </div>
+          </div>
+          <div class="div-box">
+            <div class="top_icon">
+              <h3>STEP 2</h3>
+              <img src="./img/icon/div-icon2.png" width="30%" alt="" />
+            </div>
+            <div class="textcon">
+              <h3>Get the lowest rate*</h3>
+              <p>
+                We'll negotiate for you to get the very best possible rate along
+                with access to exclusive deals
+              </p>
+            </div>
+          </div>
+          <div class="div-box">
+            <div class="top_icon">
+              <h3>STEP 3</h3>
+              <img src="./img/icon/div-icon3.png" width="30%" alt="" />
+            </div>
+            <div class="textcon">
+              <h3>Get Pre-approved</h3>
+              <p>
+                Get written pre-approval so you're ready to make that offer or
+                to refinance to a lower rate!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="divfinanceTxt">
+          <p>*Finance and deals are dependant upon lender and borrower's pro</p>
+        </div>
+      </section>
+      <!-- END OF HOW IT WORKS -->
+
+      <!-- START OF READY TO GET LOAN -->
+      <section class="ready-to-get-loan-section">
+        <div class="loan-title">
+          <h1>Ready to get a loan?</h1>
+        </div>
+        <form action="form1.html">
+          <div class="borrow-container">
+            <p>I'd like to borrow</p>
+            <input type="number" placeholder="$" id="id1" />
+            <button class="button" onclick="getData()">GET STARTED</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright © 2023 Kylin | All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/cleave.js"></script>
+    <script src="./script/main-cleave.js"></script>
+  </body>
+</html>
